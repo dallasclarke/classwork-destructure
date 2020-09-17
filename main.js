@@ -12,10 +12,8 @@ let arr = [
 //  const newObj = Object.assign({}, arr);
 const newObj = Object.fromEntries(arr);
  newObj;
- const objKeys = Object.keys(newObj)
- const [nameKey, ageKey, eyesKey] = objKeys;
- objKeys;
- console.log(nameKey, ageKey, eyesKey);
+ const {name, age, eyes} = newObj
+ console.log(name, age, eyes);
 
    
  
